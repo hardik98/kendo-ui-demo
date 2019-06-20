@@ -1,0 +1,15 @@
+<div class="input">
+<h1 class="heading">Kendo UI Input Component</h1>
+
+
+  <p class="simple"> Simple input box : <input width="200px" [(ngModel)]="inputVal" kendoTextBox type="text" /></p>   Input : {{inputVal}}
+
+  <p>Slider value = {{sliderValue}}</p>
+  <kendo-slider   [min]="min" [max]="max" [smallStep]="smallStep" [(ngModel)]="sliderValue"></kendo-slider>
+
+
+  <p>Switch</p>
+  <kendo-switch (click)="onClick()" [(ngModel)]="switchValue"></kendo-switch>
+  <p> Value : {{switchValue}} </p>
+
+</div>
